@@ -18,7 +18,11 @@
 - (id)init
 {
   if (self = [super init]) {
-    [self setTitle:@"home"];
+    [self setTitle:@"Checklists"];
+    
+    UIBarButtonItem *plusButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addChecklistButtonPressed)];
+    [plusButton setTintColor:[UIColor blackColor]];
+    [[self navigationItem] setRightBarButtonItem:plusButton];
   }
   return self;
 }
@@ -35,6 +39,11 @@
 - (void)loadView
 {
   self.view = [[HomeView alloc] init];
+}
+
+- (void)addChecklistButtonPressed
+{
+  // push a new view controller
 }
 
 - (void)viewDidLoad
