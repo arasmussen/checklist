@@ -1,5 +1,5 @@
 //
-//  HomeView.h
+//  CreateViewController.h
 //  checklist
 //
 //  Created by Andrew Rasmussen on 1/20/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeView : UITableView
+@interface CreateViewController : UIViewController <UITextFieldDelegate>
 
 @end

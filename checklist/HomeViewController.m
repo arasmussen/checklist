@@ -7,7 +7,8 @@
 //
 
 #import "HomeViewController.h"
-#import "HomeView.h"
+
+#import "CreateViewController.h"
 
 @interface HomeViewController ()
 
@@ -27,35 +28,15 @@
   return self;
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)loadView
 {
-  self.view = [[HomeView alloc] init];
+  self.view = [[UITableView alloc] init];
 }
 
 - (void)addChecklistButtonPressed
 {
-  // push a new view controller
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+  CreateViewController *createViewController = [[CreateViewController alloc] init];
+  [[self navigationController] pushViewController:createViewController animated:YES];
 }
 
 @end

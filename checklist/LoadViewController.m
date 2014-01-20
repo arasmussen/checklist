@@ -29,10 +29,10 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
-  [self performSelector:@selector(transition) withObject:nil afterDelay:3];
+  [self performSelector:@selector(timedTransition) withObject:nil afterDelay:1];
 }
 
-- (void)transition
+- (void)timedTransition
 {
   UINavigationController *navigation = [self navigationController];
   HomeViewController *homeViewController = [[HomeViewController alloc] init];
