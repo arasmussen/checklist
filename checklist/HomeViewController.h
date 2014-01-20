@@ -10,4 +10,6 @@
 
 @interface HomeViewController : UITableViewController
 
+- (void)createChecklistWithName:(NSString *)name;
+
 @end

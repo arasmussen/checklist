@@ -11,13 +11,12 @@
 
 @interface CreateView ()
 @property (strong, nonatomic) UILabel *nameLabel;
-@property (strong, nonatomic) UITextField *nameField;
 @property (strong, nonatomic) UIButton *createButton;
 @end
 
 @implementation CreateView
 
-- (id)initWithViewController:(CreateViewController *)viewController
+- (id)initWithViewController:(CreateViewController *)createViewController
 {
   if (self = [super init]) {
     [self setBackgroundColor:[UIColor whiteColor]];
@@ -32,8 +31,8 @@
     self.nameField = [[UITextField alloc] initWithFrame:CGRectMake(10, 40, screenWidth - 20, 30)];
     [self.nameField setTextColor:[UIColor blackColor]];
     [self.nameField setFont:[UIFont fontWithName:@"Verdana" size:20.0f]];
-    [self.nameField setText:@"Checklist name"];
-    [self.nameField setDelegate:viewController];
+    [self.nameField setText:@"My Checklist"];
+    [self.nameField setDelegate:createViewController];
     [self.nameField.layer setBorderColor:[[UIColor blackColor] CGColor]];
     [self.nameField.layer setBorderWidth:1.0f];
     [self.nameField setClearsOnBeginEditing:YES];
@@ -42,10 +41,11 @@
     self.createButton = [UIButton buttonWithType:UIButtonTypeSystem];
     [self.createButton setFrame:CGRectMake(0, 80, screenWidth, 40)];
     [self.createButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [self.createButton setTitle:@"Create Checklist!" forState:UIControlStateNormal];
+    [self.createButton setTitle:@"Create!" forState:UIControlStateNormal];
     [self.createButton.titleLabel setFont:[UIFont fontWithName:@"Verdana" size: 20.0f]];
     [self.createButton.layer setBorderColor:[[UIColor blackColor] CGColor]];
     [self.createButton.layer setBorderWidth:1.0f];
+    [self.createButton addTarget:createViewController action:@selector(createButtonTapped) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:self.createButton];
   }
   return self;

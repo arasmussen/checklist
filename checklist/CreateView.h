@@ -12,4 +12,6 @@
 
 - (id)initWithViewController:(CreateViewController *)viewController;
 
+@property (strong, nonatomic) UITextField *nameField;
+
 @end

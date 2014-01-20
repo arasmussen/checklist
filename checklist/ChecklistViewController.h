@@ -1,5 +1,5 @@
 //
-//  CreateViewController.h
+//  ChecklistViewController.h
 //  checklist
 //
 //  Created by Andrew Rasmussen on 1/20/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CreateViewController : UIViewController <UITextFieldDelegate>
-
-- (void)createButtonTapped;
+@interface ChecklistViewController : UITableViewController
 
 @end

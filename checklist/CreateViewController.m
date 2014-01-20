@@ -8,6 +8,7 @@
 
 #import "CreateViewController.h"
 #import "CreateView.h"
+#import "HomeViewController.h"
 
 @interface CreateViewController ()
 
@@ -26,6 +27,21 @@
 - (void)loadView
 {
   self.view = [[CreateView alloc] initWithViewController:self];
+}
+
+- (void)createButtonTapped
+{
+  CreateView *createView = (CreateView *)self.view;
+  // trim whitespace out
+  NSString *name = [[[createView nameField] text] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+  [[self homeViewController] createChecklistWithName:name];
+}
+
+- (HomeViewController *)homeViewController
+{
+  HomeViewController *homeViewController = (HomeViewController *)[[[self navigationController] viewControllers] objectAtIndex:0];
+  NSAssert([homeViewController isKindOfClass:[HomeViewController class]], @"expected a HomeViewController");
+  return homeViewController;
 }
 
 @end

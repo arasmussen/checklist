@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Andrew & Sarah. All rights reserved.
 //
 
-#import "HomeViewController.h"
-
+#import "ChecklistViewController.h"
 #import "CreateViewController.h"
+#import "HomeViewController.h"
 
 @interface HomeViewController ()
 
@@ -36,7 +36,14 @@
 - (void)addChecklistButtonPressed
 {
   CreateViewController *createViewController = [[CreateViewController alloc] init];
-  [[self navigationController] pushViewController:createViewController animated:YES];
+  [[self navigationController] pushViewController:createViewController animated:NO];
+}
+
+- (void)createChecklistWithName:(NSString *)name
+{
+  ChecklistViewController *checklistViewController = [[ChecklistViewController alloc] init];
+  [[self navigationController] popViewControllerAnimated:NO];
+  [[self navigationController] pushViewController:checklistViewController animated:NO];
 }
 
 @end
