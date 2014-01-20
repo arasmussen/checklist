@@ -22,6 +22,8 @@
 		4919FFC2188D9D1A00BADDA6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4919FFA6188D9D1A00BADDA6 /* CoreData.framework */; };
 		4919FFCA188D9D1A00BADDA6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4919FFC8188D9D1A00BADDA6 /* InfoPlist.strings */; };
 		4919FFCC188D9D1A00BADDA6 /* checklistTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4919FFCB188D9D1A00BADDA6 /* checklistTests.m */; };
+		4919FFD7188D9D9A00BADDA6 /* LoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4919FFD6188D9D9A00BADDA6 /* LoadViewController.m */; };
+		4919FFDC188DA69C00BADDA6 /* LoadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4919FFDB188DA69C00BADDA6 /* LoadView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		4919FFC7188D9D1A00BADDA6 /* checklistTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "checklistTests-Info.plist"; sourceTree = "<group>"; };
 		4919FFC9188D9D1A00BADDA6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4919FFCB188D9D1A00BADDA6 /* checklistTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = checklistTests.m; sourceTree = "<group>"; };
+		4919FFD5188D9D9A00BADDA6 /* LoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadViewController.h; sourceTree = "<group>"; };
+		4919FFD6188D9D9A00BADDA6 /* LoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadViewController.m; sourceTree = "<group>"; };
+		4919FFDA188DA69C00BADDA6 /* LoadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadView.h; sourceTree = "<group>"; };
+		4919FFDB188DA69C00BADDA6 /* LoadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,10 @@
 				4919FFB7188D9D1A00BADDA6 /* Images.xcassets */,
 				4919FFB4188D9D1A00BADDA6 /* checklist.xcdatamodeld */,
 				4919FFA9188D9D1A00BADDA6 /* Supporting Files */,
+				4919FFD5188D9D9A00BADDA6 /* LoadViewController.h */,
+				4919FFD6188D9D9A00BADDA6 /* LoadViewController.m */,
+				4919FFDA188DA69C00BADDA6 /* LoadView.h */,
+				4919FFDB188DA69C00BADDA6 /* LoadView.m */,
 			);
 			path = checklist;
 			sourceTree = "<group>";
@@ -249,7 +259,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4919FFB3188D9D1A00BADDA6 /* AppDelegate.m in Sources */,
+				4919FFDC188DA69C00BADDA6 /* LoadView.m in Sources */,
 				4919FFAF188D9D1A00BADDA6 /* main.m in Sources */,
+				4919FFD7188D9D9A00BADDA6 /* LoadViewController.m in Sources */,
 				4919FFB6188D9D1A00BADDA6 /* checklist.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
