@@ -7,6 +7,8 @@
 //
 
 #import "LoadViewController.h"
+
+#import "HomeViewController.h"
 #import "LoadView.h"
 
 @implementation LoadViewController
@@ -22,6 +24,19 @@
 - (void)loadView
 {
   self.view = [[LoadView alloc] init];
+}
+
+- (void)viewDidLoad
+{
+  [super viewDidLoad];
+  [self performSelector:@selector(transition) withObject:nil afterDelay:3];
+}
+
+- (void)transition
+{
+  UINavigationController *navigation = [self navigationController];
+  HomeViewController *homeViewController = [[HomeViewController alloc] init];
+  [navigation setViewControllers:[NSArray arrayWithObject:homeViewController] animated:NO];
 }
 
 @end
