@@ -16,16 +16,20 @@
 
 - (id)initWithFrame:(CGRect)frame
 {
-    self = [super initWithFrame:frame];
-    if (self) {
-      self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 20, 300, 20)];
-      [self.titleLabel setTextColor:[UIColor whiteColor]];
-      [self.titleLabel setBackgroundColor:[UIColor clearColor]];
-      [self.titleLabel setFont:[UIFont fontWithName:@"Verdana" size:20.0f]];
-      [self.titleLabel setText:@"Hello world!"];
-      [self addSubview:self.titleLabel];
-    }
-    return self;
+  self = [super initWithFrame:frame];
+  if (self) {
+    [self setBackgroundColor:[UIColor whiteColor]];
+    
+    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+    self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 100, screenWidth, 30)];
+    [self.titleLabel setTextAlignment:NSTextAlignmentCenter];
+    [self.titleLabel setTextColor:[UIColor blackColor]];
+    [self.titleLabel setBackgroundColor:[UIColor clearColor]];
+    [self.titleLabel setFont:[UIFont fontWithName:@"Verdana" size:20.0f]];
+    [self.titleLabel setText:@"This is a checklist app!"];
+    [self addSubview:self.titleLabel];
+  }
+  return self;
 }
 
 /*

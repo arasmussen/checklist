@@ -21,7 +21,7 @@
   // Override point for customization after application launch.
   LoadViewController *loadViewController = [[LoadViewController alloc] init];
   UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:loadViewController];
-  nav.navigationBar.translucent = NO;
+  [nav.navigationBar setTranslucent:NO];
   self.window.rootViewController = nav;
   [self.window makeKeyAndVisible];
   return YES;

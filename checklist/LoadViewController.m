@@ -11,6 +11,14 @@
 
 @implementation LoadViewController
 
+- (id)init
+{
+  if (self = [super init]) {
+    [self setTitle:@"ohai"];
+  }
+  return self;
+}
+
 - (void)loadView
 {
   self.view = [[LoadView alloc] init];
