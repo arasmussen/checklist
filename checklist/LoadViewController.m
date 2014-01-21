@@ -35,7 +35,7 @@
 - (void)timedTransition
 {
   UINavigationController *navigation = [self navigationController];
-  HomeViewController *homeViewController = [[HomeViewController alloc] init];
+  HomeViewController *homeViewController = [[HomeViewController alloc] initWithStyle:UITableViewStylePlain];
   [navigation setViewControllers:[NSArray arrayWithObject:homeViewController] animated:NO];
 }
 
