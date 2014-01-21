@@ -9,7 +9,6 @@
 #import "ChecklistViewController.h"
 #import "CreateViewController.h"
 #import "HomeViewController.h"
-#import "Checklist.h"
 
 @interface HomeViewController ()
 
@@ -40,9 +39,8 @@
   [[self navigationController] pushViewController:createViewController animated:NO];
 }
 
-- (void)createChecklistWithName:(NSString *)name
+- (void)onChecklistCreated:(Checklist *)checklist
 {
-  Checklist *checklist = [Checklist newChecklistWithName];
   ChecklistViewController *checklistViewController = [[ChecklistViewController alloc] initWithChecklist:checklist];
   [[self navigationController] popViewControllerAnimated:NO];
   [[self navigationController] pushViewController:checklistViewController animated:NO];

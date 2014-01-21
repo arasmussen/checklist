@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Andrew & Sarah. All rights reserved.
 //
 
+#import "Checklist.h"
 #import "CreateViewController.h"
 #import "CreateView.h"
 #import "HomeViewController.h"
@@ -34,7 +35,8 @@
   CreateView *createView = (CreateView *)self.view;
   // trim whitespace out
   NSString *name = [[[createView nameField] text] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-  [[self homeViewController] createChecklistWithName:name];
+  Checklist *checklist = [Checklist checklistWithName:name];
+  [[self homeViewController] onChecklistCreated:checklist];
 }
 
 - (HomeViewController *)homeViewController

@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#import "Checklist.h"
+
 @interface HomeViewController : UITableViewController
 
-- (void)createChecklistWithName:(NSString *)name;
+- (void)onChecklistCreated:(Checklist *)checklist;
 
 @end
