@@ -133,23 +133,14 @@
 		4919FFA8188D9D1A00BADDA6 /* checklist */ = {
 			isa = PBXGroup;
 			children = (
+				4919FFF4188DF42A00BADDA6 /* Controllers */,
+				4919FFF5188DF66600BADDA6 /* Model */,
+				4919FFF3188DF41D00BADDA6 /* Views */,
 				4919FFB1188D9D1A00BADDA6 /* AppDelegate.h */,
 				4919FFB2188D9D1A00BADDA6 /* AppDelegate.m */,
 				4919FFB7188D9D1A00BADDA6 /* Images.xcassets */,
 				4919FFB4188D9D1A00BADDA6 /* checklist.xcdatamodeld */,
 				4919FFA9188D9D1A00BADDA6 /* Supporting Files */,
-				4919FFD5188D9D9A00BADDA6 /* LoadViewController.h */,
-				4919FFD6188D9D9A00BADDA6 /* LoadViewController.m */,
-				4919FFDA188DA69C00BADDA6 /* LoadView.h */,
-				4919FFDB188DA69C00BADDA6 /* LoadView.m */,
-				4919FFE0188DB9BF00BADDA6 /* HomeViewController.h */,
-				4919FFE1188DB9BF00BADDA6 /* HomeViewController.m */,
-				4919FFE9188DC58700BADDA6 /* CreateViewController.h */,
-				4919FFEA188DC58700BADDA6 /* CreateViewController.m */,
-				4919FFEC188DC90700BADDA6 /* CreateView.h */,
-				4919FFED188DC90700BADDA6 /* CreateView.m */,
-				4919FFEF188DE9D300BADDA6 /* ChecklistViewController.h */,
-				4919FFF0188DE9D300BADDA6 /* ChecklistViewController.m */,
 			);
 			path = checklist;
 			sourceTree = "<group>";
@@ -181,6 +172,39 @@
 				4919FFC8188D9D1A00BADDA6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4919FFF3188DF41D00BADDA6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4919FFDA188DA69C00BADDA6 /* LoadView.h */,
+				4919FFDB188DA69C00BADDA6 /* LoadView.m */,
+				4919FFEC188DC90700BADDA6 /* CreateView.h */,
+				4919FFED188DC90700BADDA6 /* CreateView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4919FFF4188DF42A00BADDA6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4919FFD5188D9D9A00BADDA6 /* LoadViewController.h */,
+				4919FFD6188D9D9A00BADDA6 /* LoadViewController.m */,
+				4919FFE0188DB9BF00BADDA6 /* HomeViewController.h */,
+				4919FFE1188DB9BF00BADDA6 /* HomeViewController.m */,
+				4919FFE9188DC58700BADDA6 /* CreateViewController.h */,
+				4919FFEA188DC58700BADDA6 /* CreateViewController.m */,
+				4919FFEF188DE9D300BADDA6 /* ChecklistViewController.h */,
+				4919FFF0188DE9D300BADDA6 /* ChecklistViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		4919FFF5188DF66600BADDA6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
