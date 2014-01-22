@@ -8,7 +8,7 @@ extern const struct ChecklistAttributes {
 } ChecklistAttributes;
 
 extern const struct ChecklistRelationships {
-	__unsafe_unretained NSString *checklist_items;
+	__unsafe_unretained NSString *checklistItems;
 } ChecklistRelationships;
 
 @class ChecklistItem;
@@ -26,10 +26,17 @@ extern const struct ChecklistRelationships {
 
 //- (BOOL)validateName:(id*)value_ error:(NSError**)error_;
 
-@property (nonatomic, strong) ChecklistItem *checklist_items;
+@property (nonatomic, strong) NSSet *checklistItems;
 
-//- (BOOL)validateChecklist_items:(id*)value_ error:(NSError**)error_;
+- (NSMutableSet*)checklistItemsSet;
 
+@end
+
+@interface _Checklist (ChecklistItemsCoreDataGeneratedAccessors)
+- (void)addChecklistItems:(NSSet*)value_;
+- (void)removeChecklistItems:(NSSet*)value_;
+- (void)addChecklistItemsObject:(ChecklistItem*)value_;
+- (void)removeChecklistItemsObject:(ChecklistItem*)value_;
 @end
 
 @interface _Checklist (CoreDataGeneratedPrimitiveAccessors)
@@ -37,7 +44,7 @@ extern const struct ChecklistRelationships {
 - (NSString*)primitiveName;
 - (void)setPrimitiveName:(NSString*)value;
 
-- (ChecklistItem*)primitiveChecklist_items;
-- (void)setPrimitiveChecklist_items:(ChecklistItem*)value;
+- (NSMutableSet*)primitiveChecklistItems;
+- (void)setPrimitiveChecklistItems:(NSMutableSet*)value;
 
 @end

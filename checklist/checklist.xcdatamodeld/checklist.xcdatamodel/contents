@@ -2,12 +2,12 @@
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13B42" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Checklist" representedClassName="Checklist" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="checklist_items" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChecklistItem" inverseName="checklist" inverseEntity="ChecklistItem" syncable="YES"/>
+        <relationship name="checklistItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ChecklistItem" inverseName="checklist" inverseEntity="ChecklistItem" syncable="YES"/>
     </entity>
     <entity name="ChecklistItem" representedClassName="ChecklistItem" syncable="YES">
         <attribute name="checked" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="checklist" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Checklist" inverseName="checklist_items" inverseEntity="Checklist" syncable="YES"/>
+        <relationship name="checklist" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Checklist" inverseName="checklistItems" inverseEntity="Checklist" syncable="YES"/>
     </entity>
     <elements>
         <element name="Checklist" positionX="0" positionY="0" width="0" height="0"/>

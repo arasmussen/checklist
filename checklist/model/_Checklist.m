@@ -8,7 +8,7 @@ const struct ChecklistAttributes ChecklistAttributes = {
 };
 
 const struct ChecklistRelationships ChecklistRelationships = {
-	.checklist_items = @"checklist_items",
+	.checklistItems = @"checklistItems",
 };
 
 @implementation ChecklistID
@@ -42,7 +42,16 @@ const struct ChecklistRelationships ChecklistRelationships = {
 
 @dynamic name;
 
-@dynamic checklist_items;
+@dynamic checklistItems;
+
+- (NSMutableSet*)checklistItemsSet {
+	[self willAccessValueForKey:@"checklistItems"];
+
+	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"checklistItems"];
+
+	[self didAccessValueForKey:@"checklistItems"];
+	return result;
+}
 
 @end
 
