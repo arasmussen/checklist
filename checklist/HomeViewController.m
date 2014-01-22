@@ -24,9 +24,11 @@
   if (self = [super initWithStyle:style]) {
     [self setTitle:@"Checklists"];
     
+    // make the right navigation button a plus sign
     UIBarButtonItem *plusButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addChecklistButtonPressed)];
     [plusButton setTintColor:[UIColor blackColor]];
     [[self navigationItem] setRightBarButtonItem:plusButton];
+    
     [self updateChecklists];
   }
   return self;
@@ -43,14 +45,16 @@
 - (void)addChecklistButtonPressed
 {
   CreateViewController *createViewController = [[CreateViewController alloc] init];
-  [[self navigationController] pushViewController:createViewController animated:NO];
+  [[self navigationController] pushViewController:createViewController animated:YES];
 }
 
 - (void)onChecklistCreated:(Checklist *)checklist
 {
   ChecklistViewController *checklistViewController = [[ChecklistViewController alloc] initWithChecklist:checklist];
-  [[self navigationController] popViewControllerAnimated:NO];
-  [[self navigationController] pushViewController:checklistViewController animated:NO];
+  NSMutableArray *viewControllers = [[[self navigationController] viewControllers] mutableCopy];
+  [viewControllers insertObject:checklistViewController atIndex:([viewControllers count] - 1)];
+  [[self navigationController] setViewControllers:viewControllers];
+  [[self navigationController] popViewControllerAnimated:YES];
   [self updateChecklists];
 }
 
@@ -111,7 +115,7 @@
   NSInteger row = [indexPath row];
   Checklist *checklist = [[self checklists] objectAtIndex:row];
   ChecklistViewController *checklistViewController = [[ChecklistViewController alloc] initWithChecklist:checklist];
-  [[self navigationController] pushViewController:checklistViewController animated:NO];
+  [[self navigationController] pushViewController:checklistViewController animated:YES];
 }
 
 @end

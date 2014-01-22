@@ -21,6 +21,11 @@
 {
   if (self = [super init]) {
     [self setTitle:@"New Checklist"];
+    
+    // make the left navigation button say cancel
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancel)];
+    [backButton setTintColor:[UIColor blackColor]];
+    [[self navigationItem] setLeftBarButtonItem:backButton];
   }
   return self;
 }
@@ -28,6 +33,11 @@
 - (void)loadView
 {
   self.view = [[CreateView alloc] initWithViewController:self];
+}
+
+- (void)cancel
+{
+  [[self navigationController] popViewControllerAnimated:YES];
 }
 
 - (void)createButtonTapped

@@ -18,8 +18,18 @@
 {
   if (self = [super init]) {
     self.checklist = checklist;
+    
+    // make the left navigation button say cancel
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancel)];
+    [backButton setTintColor:[UIColor blackColor]];
+    [[self navigationItem] setLeftBarButtonItem:backButton];
   }
   return self;
+}
+
+- (void)cancel
+{
+  [[self navigationController] popViewControllerAnimated:YES];
 }
 
 @end
