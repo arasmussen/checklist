@@ -19,6 +19,8 @@
   if (self = [super init]) {
     self.checklist = checklist;
     
+    [self setTitle:checklist.name];
+    
     // make the left navigation button say cancel
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancel)];
     [backButton setTintColor:[UIColor blackColor]];
