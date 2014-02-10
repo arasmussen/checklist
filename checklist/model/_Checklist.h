@@ -9,9 +9,13 @@ extern const struct ChecklistAttributes {
 
 extern const struct ChecklistRelationships {
 	__unsafe_unretained NSString *checklistItems;
+	__unsafe_unretained NSString *collaborators;
+	__unsafe_unretained NSString *owner;
 } ChecklistRelationships;
 
 @class ChecklistItem;
+@class Person;
+@class Person;
 
 @interface ChecklistID : NSManagedObjectID {}
 @end
@@ -30,6 +34,14 @@ extern const struct ChecklistRelationships {
 
 - (NSMutableSet*)checklistItemsSet;
 
+@property (nonatomic, strong) NSSet *collaborators;
+
+- (NSMutableSet*)collaboratorsSet;
+
+@property (nonatomic, strong) Person *owner;
+
+//- (BOOL)validateOwner:(id*)value_ error:(NSError**)error_;
+
 @end
 
 @interface _Checklist (ChecklistItemsCoreDataGeneratedAccessors)
@@ -39,6 +51,13 @@ extern const struct ChecklistRelationships {
 - (void)removeChecklistItemsObject:(ChecklistItem*)value_;
 @end
 
+@interface _Checklist (CollaboratorsCoreDataGeneratedAccessors)
+- (void)addCollaborators:(NSSet*)value_;
+- (void)removeCollaborators:(NSSet*)value_;
+- (void)addCollaboratorsObject:(Person*)value_;
+- (void)removeCollaboratorsObject:(Person*)value_;
+@end
+
 @interface _Checklist (CoreDataGeneratedPrimitiveAccessors)
 
 - (NSString*)primitiveName;
@@ -46,5 +65,11 @@ extern const struct ChecklistRelationships {
 
 - (NSMutableSet*)primitiveChecklistItems;
 - (void)setPrimitiveChecklistItems:(NSMutableSet*)value;
+
+- (NSMutableSet*)primitiveCollaborators;
+- (void)setPrimitiveCollaborators:(NSMutableSet*)value;
+
+- (Person*)primitiveOwner;
+- (void)setPrimitiveOwner:(Person*)value;
 
 @end

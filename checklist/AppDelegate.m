@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "LoadViewController.h"
+#import "HomeViewController.h"
 
 @implementation AppDelegate
 
@@ -19,8 +19,8 @@
 {
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   // Override point for customization after application launch.
-  LoadViewController *loadViewController = [[LoadViewController alloc] init];
-  UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:loadViewController];
+  HomeViewController *homeViewController = [[HomeViewController alloc] init];
+  UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:homeViewController];
   [nav.navigationBar setTranslucent:NO];
   self.window.rootViewController = nav;
   [self.window makeKeyAndVisible];

@@ -9,7 +9,7 @@ extern const struct ChecklistItemAttributes {
 } ChecklistItemAttributes;
 
 extern const struct ChecklistItemRelationships {
-	__unsafe_unretained NSString *checklist;
+	__unsafe_unretained NSString *parent;
 } ChecklistItemRelationships;
 
 @class Checklist;
@@ -35,9 +35,9 @@ extern const struct ChecklistItemRelationships {
 
 //- (BOOL)validateName:(id*)value_ error:(NSError**)error_;
 
-@property (nonatomic, strong) Checklist *checklist;
+@property (nonatomic, strong) Checklist *parent;
 
-//- (BOOL)validateChecklist:(id*)value_ error:(NSError**)error_;
+//- (BOOL)validateParent:(id*)value_ error:(NSError**)error_;
 
 @end
 
@@ -52,7 +52,7 @@ extern const struct ChecklistItemRelationships {
 - (NSString*)primitiveName;
 - (void)setPrimitiveName:(NSString*)value;
 
-- (Checklist*)primitiveChecklist;
-- (void)setPrimitiveChecklist:(Checklist*)value;
+- (Checklist*)primitiveParent;
+- (void)setPrimitiveParent:(Checklist*)value;
 
 @end

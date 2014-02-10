@@ -9,7 +9,7 @@ const struct ChecklistItemAttributes ChecklistItemAttributes = {
 };
 
 const struct ChecklistItemRelationships ChecklistItemRelationships = {
-	.checklist = @"checklist",
+	.parent = @"parent",
 };
 
 @implementation ChecklistItemID
@@ -69,7 +69,7 @@ const struct ChecklistItemRelationships ChecklistItemRelationships = {
 
 @dynamic name;
 
-@dynamic checklist;
+@dynamic parent;
 
 @end
 

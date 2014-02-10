@@ -11,6 +11,11 @@
 		49190008188E019700BADDA6 /* _ChecklistItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 49190002188E019700BADDA6 /* _ChecklistItem.m */; };
 		49190009188E019700BADDA6 /* Checklist.m in Sources */ = {isa = PBXBuildFile; fileRef = 49190004188E019700BADDA6 /* Checklist.m */; };
 		4919000A188E019700BADDA6 /* ChecklistItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 49190006188E019700BADDA6 /* ChecklistItem.m */; };
+		49190013189D94BE00BADDA6 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49190012189D94BE00BADDA6 /* LoginViewController.m */; };
+		49190016189D96B700BADDA6 /* ManageListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49190015189D96B700BADDA6 /* ManageListViewController.m */; };
+		49190019189D96CE00BADDA6 /* AddCollaboratorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49190018189D96CE00BADDA6 /* AddCollaboratorsViewController.m */; };
+		4919001E189D9B3A00BADDA6 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 4919001D189D9B3A00BADDA6 /* Person.m */; };
+		49190021189D9B4300BADDA6 /* _Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 49190020189D9B4300BADDA6 /* _Person.m */; };
 		4919FFA1188D9D1A00BADDA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4919FFA0188D9D1A00BADDA6 /* Foundation.framework */; };
 		4919FFA3188D9D1A00BADDA6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4919FFA2188D9D1A00BADDA6 /* CoreGraphics.framework */; };
 		4919FFA5188D9D1A00BADDA6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4919FFA4188D9D1A00BADDA6 /* UIKit.framework */; };
@@ -26,8 +31,6 @@
 		4919FFC2188D9D1A00BADDA6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4919FFA6188D9D1A00BADDA6 /* CoreData.framework */; };
 		4919FFCA188D9D1A00BADDA6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4919FFC8188D9D1A00BADDA6 /* InfoPlist.strings */; };
 		4919FFCC188D9D1A00BADDA6 /* checklistTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4919FFCB188D9D1A00BADDA6 /* checklistTests.m */; };
-		4919FFD7188D9D9A00BADDA6 /* LoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4919FFD6188D9D9A00BADDA6 /* LoadViewController.m */; };
-		4919FFDC188DA69C00BADDA6 /* LoadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4919FFDB188DA69C00BADDA6 /* LoadView.m */; };
 		4919FFE2188DB9BF00BADDA6 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4919FFE1188DB9BF00BADDA6 /* HomeViewController.m */; };
 		4919FFEB188DC58700BADDA6 /* CreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4919FFEA188DC58700BADDA6 /* CreateViewController.m */; };
 		4919FFEE188DC90700BADDA6 /* CreateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4919FFED188DC90700BADDA6 /* CreateView.m */; };
@@ -52,6 +55,16 @@
 		49190004188E019700BADDA6 /* Checklist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Checklist.m; path = model/Checklist.m; sourceTree = "<group>"; };
 		49190005188E019700BADDA6 /* ChecklistItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChecklistItem.h; path = model/ChecklistItem.h; sourceTree = "<group>"; };
 		49190006188E019700BADDA6 /* ChecklistItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChecklistItem.m; path = model/ChecklistItem.m; sourceTree = "<group>"; };
+		49190011189D94BE00BADDA6 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		49190012189D94BE00BADDA6 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		49190014189D96B700BADDA6 /* ManageListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManageListViewController.h; sourceTree = "<group>"; };
+		49190015189D96B700BADDA6 /* ManageListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManageListViewController.m; sourceTree = "<group>"; };
+		49190017189D96CE00BADDA6 /* AddCollaboratorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCollaboratorsViewController.h; sourceTree = "<group>"; };
+		49190018189D96CE00BADDA6 /* AddCollaboratorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCollaboratorsViewController.m; sourceTree = "<group>"; };
+		4919001C189D9B3A00BADDA6 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = model/Person.h; sourceTree = "<group>"; };
+		4919001D189D9B3A00BADDA6 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = model/Person.m; sourceTree = "<group>"; };
+		4919001F189D9B4300BADDA6 /* _Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _Person.h; path = model/_Person.h; sourceTree = "<group>"; };
+		49190020189D9B4300BADDA6 /* _Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _Person.m; path = model/_Person.m; sourceTree = "<group>"; };
 		4919FF9D188D9D1A00BADDA6 /* checklist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = checklist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4919FFA0188D9D1A00BADDA6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4919FFA2188D9D1A00BADDA6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -70,10 +83,6 @@
 		4919FFC7188D9D1A00BADDA6 /* checklistTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "checklistTests-Info.plist"; sourceTree = "<group>"; };
 		4919FFC9188D9D1A00BADDA6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4919FFCB188D9D1A00BADDA6 /* checklistTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = checklistTests.m; sourceTree = "<group>"; };
-		4919FFD5188D9D9A00BADDA6 /* LoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadViewController.h; sourceTree = "<group>"; };
-		4919FFD6188D9D9A00BADDA6 /* LoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadViewController.m; sourceTree = "<group>"; };
-		4919FFDA188DA69C00BADDA6 /* LoadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadView.h; sourceTree = "<group>"; };
-		4919FFDB188DA69C00BADDA6 /* LoadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadView.m; sourceTree = "<group>"; };
 		4919FFE0188DB9BF00BADDA6 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		4919FFE1188DB9BF00BADDA6 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		4919FFE9188DC58700BADDA6 /* CreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateViewController.h; sourceTree = "<group>"; };
@@ -111,6 +120,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4919001A189D9B1C00BADDA6 /* Machine */ = {
+			isa = PBXGroup;
+			children = (
+				4919001F189D9B4300BADDA6 /* _Person.h */,
+				49190020189D9B4300BADDA6 /* _Person.m */,
+				4919FFFF188E019700BADDA6 /* _Checklist.h */,
+				49190000188E019700BADDA6 /* _Checklist.m */,
+				49190001188E019700BADDA6 /* _ChecklistItem.h */,
+				49190002188E019700BADDA6 /* _ChecklistItem.m */,
+			);
+			name = Machine;
+			sourceTree = "<group>";
+		};
+		4919001B189D9B2000BADDA6 /* Human */ = {
+			isa = PBXGroup;
+			children = (
+				4919001C189D9B3A00BADDA6 /* Person.h */,
+				4919001D189D9B3A00BADDA6 /* Person.m */,
+				49190003188E019700BADDA6 /* Checklist.h */,
+				49190004188E019700BADDA6 /* Checklist.m */,
+				49190005188E019700BADDA6 /* ChecklistItem.h */,
+				49190006188E019700BADDA6 /* ChecklistItem.m */,
+			);
+			name = Human;
+			sourceTree = "<group>";
+		};
 		4919FF94188D9D1A00BADDA6 = {
 			isa = PBXGroup;
 			children = (
@@ -189,8 +224,6 @@
 		4919FFF3188DF41D00BADDA6 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				4919FFDA188DA69C00BADDA6 /* LoadView.h */,
-				4919FFDB188DA69C00BADDA6 /* LoadView.m */,
 				4919FFEC188DC90700BADDA6 /* CreateView.h */,
 				4919FFED188DC90700BADDA6 /* CreateView.m */,
 			);
@@ -200,14 +233,18 @@
 		4919FFF4188DF42A00BADDA6 /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				4919FFD5188D9D9A00BADDA6 /* LoadViewController.h */,
-				4919FFD6188D9D9A00BADDA6 /* LoadViewController.m */,
 				4919FFE0188DB9BF00BADDA6 /* HomeViewController.h */,
 				4919FFE1188DB9BF00BADDA6 /* HomeViewController.m */,
 				4919FFE9188DC58700BADDA6 /* CreateViewController.h */,
 				4919FFEA188DC58700BADDA6 /* CreateViewController.m */,
 				4919FFEF188DE9D300BADDA6 /* ChecklistViewController.h */,
 				4919FFF0188DE9D300BADDA6 /* ChecklistViewController.m */,
+				49190011189D94BE00BADDA6 /* LoginViewController.h */,
+				49190012189D94BE00BADDA6 /* LoginViewController.m */,
+				49190014189D96B700BADDA6 /* ManageListViewController.h */,
+				49190015189D96B700BADDA6 /* ManageListViewController.m */,
+				49190017189D96CE00BADDA6 /* AddCollaboratorsViewController.h */,
+				49190018189D96CE00BADDA6 /* AddCollaboratorsViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -215,14 +252,8 @@
 		4919FFF5188DF66600BADDA6 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				4919FFFF188E019700BADDA6 /* _Checklist.h */,
-				49190000188E019700BADDA6 /* _Checklist.m */,
-				49190001188E019700BADDA6 /* _ChecklistItem.h */,
-				49190002188E019700BADDA6 /* _ChecklistItem.m */,
-				49190003188E019700BADDA6 /* Checklist.h */,
-				49190004188E019700BADDA6 /* Checklist.m */,
-				49190005188E019700BADDA6 /* ChecklistItem.h */,
-				49190006188E019700BADDA6 /* ChecklistItem.m */,
+				4919001B189D9B2000BADDA6 /* Human */,
+				4919001A189D9B1C00BADDA6 /* Machine */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -323,16 +354,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				4919FFB3188D9D1A00BADDA6 /* AppDelegate.m in Sources */,
-				4919FFDC188DA69C00BADDA6 /* LoadView.m in Sources */,
 				49190007188E019700BADDA6 /* _Checklist.m in Sources */,
+				49190019189D96CE00BADDA6 /* AddCollaboratorsViewController.m in Sources */,
 				49190008188E019700BADDA6 /* _ChecklistItem.m in Sources */,
+				49190013189D94BE00BADDA6 /* LoginViewController.m in Sources */,
 				4919FFEB188DC58700BADDA6 /* CreateViewController.m in Sources */,
 				4919FFAF188D9D1A00BADDA6 /* main.m in Sources */,
-				4919FFD7188D9D9A00BADDA6 /* LoadViewController.m in Sources */,
 				4919FFB6188D9D1A00BADDA6 /* checklist.xcdatamodeld in Sources */,
 				4919000A188E019700BADDA6 /* ChecklistItem.m in Sources */,
+				49190016189D96B700BADDA6 /* ManageListViewController.m in Sources */,
+				49190021189D9B4300BADDA6 /* _Person.m in Sources */,
 				49190009188E019700BADDA6 /* Checklist.m in Sources */,
 				4919FFEE188DC90700BADDA6 /* CreateView.m in Sources */,
+				4919001E189D9B3A00BADDA6 /* Person.m in Sources */,
 				4919FFF1188DE9D300BADDA6 /* ChecklistViewController.m in Sources */,
 				4919FFE2188DB9BF00BADDA6 /* HomeViewController.m in Sources */,
 			);
